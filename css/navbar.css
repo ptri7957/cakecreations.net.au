@@ -3,12 +3,12 @@
     background: #3b3a3a;
     border: transparent;
     box-shadow: 1px 1px 1px 1px dimgray;
-    padding-bottom: 20px;
     border-radius: 0;
+    margin-bottom: 50px;
 }
 
 .navbar-default .navbar-brand{
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 2em;
 }

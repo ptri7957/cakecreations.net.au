@@ -1,22 +1,28 @@
 body{
     font-family: 'Alegreya Sans';
-    background: url('../img/jumbo.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding-top: 60px;
 }
 
 p{
     font-size: 1.5em;
 }
 
+img {
+  max-width: 100%;
+}
+
+.logo{
+    font-family: 'Clicker Script', cursive;
+    color: white;
+}
 
 [class*="col-"]{
     margin-bottom: 10px;
 }
 
 section{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .section-heading{
@@ -45,4 +51,41 @@ section{
 
 .col-padding{
     padding-bottom: 10px;
+}
+
+.row.no-gutters {
+  margin: 0 !important;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0 !important;
+}
+
+.portfolio-box{
+    padding-bottom: 0px;
+}
+
+.portfolio-box img{
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+.portfolio-box:hover img{
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+    filter: brightness(100%);
+    
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#portfolio{
+    padding: 0;
 }

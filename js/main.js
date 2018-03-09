@@ -19,10 +19,17 @@ $(document).ready(function(){
             $(this).toggleClass("active");
         });
     });
-    
-    $(function(){
-        $('#call').click(function(){
-            window.location.href = "call:0468946283";
-        });
+
+    // Scroll shrink navbar
+    $(window).scroll(function(){
+        if($(document).scrollTop() > 50){
+            $('.navbar-default').removeClass('fade');
+        }else{
+            $('.navbar-default').addClass('fade');
+        }
     });
+    
+    // Scroll reveal gallery
+    window.sr = ScrollReveal();
+    sr.reveal('.portfolio-box', { duration: 400, scale:.3, distance:"0px" });
 });

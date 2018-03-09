@@ -1,6 +1,6 @@
 body{
     font-family: 'Alegreya Sans';
-    padding-top: 60px;
+    /*padding-top: 60px;*/
 }
 
 p{
@@ -88,4 +88,13 @@ section{
 
 #portfolio{
     padding: 0;
+    background-color: pink;
+}
+
+#contact a{
+    color: black;
+}
+
+#contact a:hover{
+    color: black;
 }

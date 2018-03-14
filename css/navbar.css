@@ -1,18 +1,17 @@
 .navbar-default{
     padding-top: 10px;
-    background: #3b3a3a;
+    background-color: transparent;
     border: transparent;
-    box-shadow: 1px 1px 1px 1px dimgray;
     border-radius: 0;
     margin-bottom: 50px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
-.fade{
-    -webkit-opacity: 0.5;
-    -moz-opacity: 0.5;
-    -ms-opacity: 0.5;
-    opacity: 0.5;
-    color: black;
+.show-nav{
+    background-color: #3b3a3a;
 }
 
 .navbar-default .navbar-brand{
@@ -47,4 +46,30 @@
 
 .navbar-nav > .active{
     border-bottom: 2px solid white;
+}
+
+/*** ipad ***/
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    
+}
+
+/*** Smartphones ***/
+@media all and (min-width: 480px) and (max-width: 767px) { 
+    body{
+        padding-top: 50px;
+    }
+    
+    .navbar-default{
+        background-color: #3b3a3a;
+    }
+}
+
+/*** Smaller smartphones ***/
+@media all and (max-width: 480px) { 
+    body{
+        padding-top: 50px;
+    }
+    .navbar-default{
+        background-color: #3b3a3a;
+    }
 }

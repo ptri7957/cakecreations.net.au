@@ -23,9 +23,9 @@ $(document).ready(function(){
     // Scroll shrink navbar
     $(window).scroll(function(){
         if($(document).scrollTop() > 50){
-            $('.navbar-default').removeClass('fade');
+            $('.navbar-default').addClass('show-nav');
         }else{
-            $('.navbar-default').addClass('fade');
+            $('.navbar-default').removeClass('show-nav');
         }
     });
     

@@ -1,6 +1,14 @@
+html, body{
+    width: 100%;
+    height: 100%
+}
+
+.carousel-heading{
+    font-size: 3em;
+}
+
 body{
     font-family: 'Alegreya Sans';
-    /*padding-top: 60px;*/
 }
 
 p{
@@ -14,6 +22,13 @@ img {
 .logo{
     font-family: 'Clicker Script', cursive;
     color: white;
+}
+
+.show-nav{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 [class*="col-"]{
@@ -41,8 +56,13 @@ section{
     color: white;
 }
 
+#testimonial .desc{
+    text-align: center;
+}
+
 #contact{
-    background-color: pink;
+    background-color: #3b3a3a;
+    color: white;
 }
 
 .desc{
@@ -92,9 +112,184 @@ section{
 }
 
 #contact a{
-    color: black;
+    color: white;
 }
 
 #contact a:hover{
-    color: black;
+    color: white;
+}
+
+.carousel-box{
+    text-align: center;
+    color: white;
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-bottom: 10%;
+    font-style: italic;
+}
+
+.carousel-caption p{
+    font-size: 2em;
+}
+
+.section-heading{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.button-wrap{
+    padding: 8px 8px 8px 8px;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1.5em; 
+}
+
+.button-wrap a, .button-wrap a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-fade .carousel-inner .item img{
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -ms-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.modal-fullscreen {
+  background: rgba(0, 0, 0, 0.9);
+}
+.modal-fullscreen .modal-content {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+    
+}
+
+.modal-header{
+    border-bottom: black;
+
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.modal-content {
+  height: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.close {
+    font-size: 4em;
+    color: white; 
+    opacity: 1;
+}
+
+.close:hover{
+    color: white;
+}
+
+/*** ipad ***/
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    .carousel img{
+        height: 600px;
+    }
+    
+    .carousel-caption p{
+        font-size: 1.5em;
+    }
+    
+    .carousel-heading{
+        font-size: 2em;
+    }
+    
+    .button-wrap a{
+        font-size: 1em;
+    }
+    
+}
+
+/*** ipad Landscape ***/
+@media all and (max-width: 1024px) { 
+    .section-heading{
+        font-size: 2.5em;
+    }
+    
+    .desc{
+        font-size: 1em;
+    }
+}
+
+/*** Smartphones Landscape ***/
+@media all and (min-width: 480px) and (max-width: 767px) { 
+    .carousel-caption p{
+        font-size: 1.2em;
+    }
+    
+    .carousel-heading{
+        font-size: 1.5em;
+    }
+    
+    .button-wrap a{
+        font-size: 0.5em;
+    }
+}
+
+/*** Smartphones ***/
+@media all and (max-width: 480px) { 
+    .carousel img{
+        height: 300px;
+    }
+    
+    .carousel-caption p{
+        font-size: 1em;
+    }
+    
+     .carousel-heading{
+        font-size: 1em;
+    }
+    
+    .button-wrap a{
+        font-size: 0.5em;
+    }
+    
+    .button-wrap{
+        margin-top: 10px;
+        width:100px;
+    }
+    
+    .section-heading{
+        font-size: 1.5em;
+    }
+    
+    .desc{
+        font-size: 0.7em;
+    }
+    
+    .navbar-default .navbar-brand{
+        font-size: 1.2em;
+    }
+    
+    .nav.navbar-nav li a {
+        font-size: 0.5em;
+    }
 }

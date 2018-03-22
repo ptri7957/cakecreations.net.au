@@ -19,6 +19,15 @@ $(document).ready(function(){
             $(this).toggleClass("active");
         });
     });
+    
+    $('body').click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("collapse in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $(".navbar-collapse").collapse('hide');
+        }
+
+    });
 
     // Scroll shrink navbar
     $(window).scroll(function(){

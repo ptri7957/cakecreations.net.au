@@ -1,9 +1,9 @@
 .navbar-default{
-    padding-top: 10px;
+
     background-color: transparent;
     border: transparent;
     border-radius: 0;
-    margin-bottom: 50px;
+
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
@@ -44,8 +44,8 @@
     font-weight: bold;
 }
 
-.navbar-nav > .active{
-    border-bottom: 2px solid white;
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: pink;
 }
 
 /*** ipad ***/
